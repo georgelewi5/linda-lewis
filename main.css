@@ -33,6 +33,14 @@ img {
     padding-right: 10vw;
     padding-bottom: 10vh;
 }
+.wrappertwo {
+  display: grid;
+  padding-top: 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 5vh;
+  background-color: rgb(238, 232, 232);
+}
 /* slider container */
 .slider-container {
   width: 80%;
@@ -195,16 +203,16 @@ img {
 }
 .imageonecontainer {
   padding-top: 100px;
+  justify-items: center;
   display: grid;
-  grid-template-columns: 47.5% 5% 47.5%;
+  grid-template-columns: 48.5% 3% 48.5%;
   width: 100%;
+  gap: 1%;
   grid-template-areas: 
-  "i . j"
-  "i . k"
+  "i i i"
+  "i i i"
   "m . k"
-  "m . k"
-  "n . k"
-  "n . k";
+  "p . o";
 }
 .imageone {
   grid-area: i;
@@ -213,15 +221,7 @@ img {
   grid-area: m;
 }
 .imagethree {
-  grid-area: n;
-}
-.titleonecontainer {
-  grid-area: j;
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  justify-items: center;
-  grid-template-areas: 
-  ". l .";
+  grid-area: o;
 }
 .titleone {
 grid-area: l;
@@ -231,6 +231,11 @@ font-weight: 500;
 .textone {
   grid-area: k;
   font-size: 20px;
+}
+.texttwo {
+  grid-area: p;
+  font-size: 20px;
+  text-align: right;
 }
 .translucent-background {
   background-color: rgb(144, 159, 188);
