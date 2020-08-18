@@ -150,7 +150,11 @@ img {
   "a b"
   "c d"
   "e f"
-  "g h";
+  "g h"
+  "m n"
+  "i j"
+  "o p"
+  "k l";
 }
 .first-photo {
   grid-area: a;
@@ -172,6 +176,22 @@ img {
   grid-area: f;
   overflow: hidden;
 }
+.fith-photo {
+  grid-area: m;
+  overflow: hidden;
+}
+.sixth-photo {
+  grid-area: n;
+  overflow: hidden;
+}
+.seventh-photo {
+  grid-area: o;
+  overflow: hidden;
+}
+.eighth-photo {
+  grid-area: p;
+  overflow: hidden;
+}
 .first-text {
   grid-area: c;
 }
@@ -183,6 +203,18 @@ img {
 }
 .fourth-text {
   grid-area: h;
+}
+.fith-text {
+  grid-area: i;
+}
+.sixth-text {
+  grid-area: j;
+}
+.seventh-text {
+  grid-area: k;
+}
+.eighth-text {
+  grid-area: l;
 }
 /* About page */
 .aboutcontainer {
