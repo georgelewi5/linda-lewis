@@ -16,6 +16,7 @@ html {
 }
 p {
   margin-top: 0;
+  margin-block-end: 1.5em;
 }
 body {
     background: var(--background);
@@ -32,14 +33,6 @@ img {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 10vh;
-}
-.wrappertwo {
-  display: grid;
-  padding-top: 2vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-bottom: 5vh;
-  background-color: rgb(238, 232, 232);
 }
 .fade {
   opacity: 1;
@@ -236,14 +229,8 @@ img {
   text-align: center;
 }
 /* First image page */
-.columncreator {
-  padding-top: 3vh;
-  display: grid;
-  grid-template-rows: 80px;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  width: 100%;
-}
 .firstimage-title {
+  padding-top: 3vh;
   position: relative;
   font-size: 3.5rem;
   max-height: 4em;
@@ -259,7 +246,6 @@ img {
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
   width: 100%;
-  gap: 1%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -268,11 +254,11 @@ img {
 }
 .imageone {
   grid-area: i;
-  width: 80%;
-  height: 80%;
+  padding-bottom: 1.5vh;
 }
 .imagetwo {
   grid-area: m;
+  padding-bottom: 2.5vh;
 }
 .imagethree {
   grid-area: o;
@@ -285,14 +271,165 @@ font-weight: 500;
 .textone {
   grid-area: k;
   font-size: 20px;
+  padding-bottom: 1.5vh;
+  margin: auto;
+  text-align: center;
 }
 .texttwo {
   grid-area: p;
   font-size: 20px;
-  text-align: right;
+  margin: auto;
+  text-align: center;
 }
-.translucent-background {
-  background-color: rgb(144, 159, 188);
+/* Second image page */
+.secondimage-title {
+  padding-top: 3vh;
+  position: relative;
+  font-size: 3.5rem;
+  max-height: 4em;
+  font-weight: 600;
+  color: var(--text);
+  grid-row-start: 1;
+  grid-column: 2;
+  text-align: center;
+}
+.imagetwocontainer {
+  padding-top: 5vh;
+  justify-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 48.5% 3% 48.5%;
+  width: 80%;
+  grid-template-areas: 
+  "i i i"
+  "i i i"
+  "m . k"
+  "p . o";
+}
+.imageonetwo {
+  grid-area: i;
+  padding-bottom: 1.5vh;
+}
+.imagetwotwo {
+  grid-area: m;
+  padding-bottom: 2.5vh;
+}
+.imagethreetwo {
+  grid-area: o;
+}
+.titleonetwo {
+grid-area: l;
+font-size: 40px;
+font-weight: 500;
+}
+.textonetwo {
+  grid-area: k;
+  font-size: 20px;
+  padding-bottom: 1.5vh;
+  margin: auto;
+  text-align: center;
+}
+.texttwotwo {
+  grid-area: p;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+/* Third image page */
+.thirdimage-title {
+  padding-top: 3vh;
+  position: relative;
+  font-size: 3.5rem;
+  max-height: 4em;
+  font-weight: 600;
+  color: var(--text);
+  grid-row-start: 1;
+  grid-column: 2;
+  text-align: center;
+}
+.imagethreecontainer {
+  padding-top: 5vh;
+  justify-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 48.5% 3% 48.5%;
+  width: 80%;
+  grid-template-areas: 
+  "i i i"
+  "i i i"
+  "k . m"
+  "k . o";
+}
+.imageonethree {
+  grid-area: i;
+  padding-bottom: 1.5vh;
+}
+.imagetwothree {
+  grid-area: m;
+  padding-bottom: 2.5vh;
+}
+.imagethreethree {
+  grid-area: o;
+}
+.titleonethree {
+grid-area: l;
+font-size: 40px;
+font-weight: 500;
+}
+.textonethree {
+  grid-area: k;
+  font-size: 20px;
+  padding-bottom: 1.5vh;
+  margin: auto;
+  text-align: center;
+}
+/* Fourth image page */
+.fourthimage-title {
+  padding-top: 3vh;
+  position: relative;
+  font-size: 3.5rem;
+  max-height: 4em;
+  font-weight: 600;
+  color: var(--text);
+  grid-row-start: 1;
+  grid-column: 2;
+  text-align: center;
+}
+.imagefourcontainer {
+  padding-top: 5vh;
+  justify-items: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 48.5% 3% 48.5%;
+  width: 80%;
+  grid-template-areas: 
+  "i i i"
+  "i i i"
+  "k k k"
+  "m . o";
+}
+.imageonefour {
+  grid-area: i;
+  padding-bottom: 1.5vh;
+}
+.imagetwofour {
+  grid-area: m;
+  padding-bottom: 2.5vh;
+}
+.imagethreefour {
+  grid-area: o;
+}
+.titleonefour {
+grid-area: l;
+font-size: 40px;
+font-weight: 500;
+}
+.textonefour {
+  grid-area: k;
+  font-size: 20px;
+  padding-bottom: 1.5vh;
+  margin: auto;
+  text-align: center;
 }
 /* footer */
 footer {
