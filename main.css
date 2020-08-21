@@ -211,6 +211,7 @@ img {
 /* About page */
 .aboutcontainer {
   padding-top: 2vh;
+  padding-bottom: 5vh;
   display: grid;
   grid-template-rows: 22vh 30vh 10vh 29vh 20vh;
   grid-template-columns: 40% 29% 2% 29%;
