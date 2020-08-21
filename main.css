@@ -211,16 +211,16 @@ img {
 /* About page */
 .aboutcontainer {
   padding-top: 2vh;
-  padding-bottom: 5vh;
+  padding-bottom: 20vh;
   display: grid;
-  grid-template-rows: 22vh 30vh 10vh 29vh 20vh;
+  grid-template-rows: 30vh 30vh 15vh 32vh 24vh;
   grid-template-columns: 40% 29% 2% 29%;
   width: 100%;
   height: 100vh;
   grid-template-areas: 
   "q r r r"
   "q v . w"
-  "q s s s"
+  "t s s s"
   "t y . z"
   "six u u u";
 }
@@ -237,13 +237,13 @@ img {
   grid-area: v;
   object-fit: cover;
   overflow: hidden;
-  margin-bottom: 3vh;
+  margin-bottom: 2.2vh;
 }
 .aboutimagethree {
   grid-area: w;
   object-fit: cover;
   overflow: hidden;
-  margin-bottom: 3vh;
+  margin-bottom: 2.2vh;
 }
 .aboutimagefour {
   grid-area: y;
@@ -267,31 +267,32 @@ img {
   grid-area: r;
   text-align: center;
   margin: auto;
-  font-size: 17px;
+  font-size: 20px;
   word-spacing: 4px;
-  line-height: 25px;
+  line-height: 30px;
 }
 .abouttexttwo {
   grid-area: s;
   text-align: center;
   margin: auto;
-  font-size: 17px;
+  font-size: 20px;
   word-spacing: 4px;
-  line-height: 25px;
+  line-height: 30px;
 }
 .abouttextthree {
   grid-area: t;
   text-align: center;
   margin-right: 1.5vw;
-  font-size: 17px;
+  font-size: 20px;
   word-spacing: 4px;
+  margin: auto;
 }
 .abouttextfour {
   grid-area: u;
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
   word-spacing: 4px;
-  line-height: 25px;
+  line-height: 30px;
 }
 /* First image page */
 .firstimage-title {
