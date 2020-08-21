@@ -212,20 +212,36 @@ img {
 .aboutcontainer {
   padding-top: 5vh;
   display: grid;
-  grid-template-rows: 80px;
-  grid-template-columns: 50% 50%;
+  grid-template-rows: 25vh 25vh 25vh 25vh;
+  grid-template-columns: 24% 2% 25% 50%;
   width: 100%;
   height: 100vh;
-  gap: 1%;
   grid-template-areas: 
-  "r q"
-  "r q";
+  "r r r q"
+  "r r r q"
+  "s s s q"
+  "u t t t";
 }
 .aboutimageone {
   grid-area: q;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 .abouttextone {
   grid-area: r;
+  text-align: center;
+}
+.abouttexttwo {
+  grid-area: s;
+  text-align: center;
+}
+.abouttextthree {
+  grid-area: t;
+  text-align: center;
+}
+.abouttextfour {
+  grid-area: u;
   text-align: center;
 }
 /* First image page */
@@ -304,7 +320,9 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
-  "p . o";
+  "m . o"
+  "p . o"
+  ". . .";
 }
 .imageonetwo {
   grid-area: i;
@@ -326,14 +344,11 @@ font-weight: 500;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
-  margin: auto;
-  text-align: center;
 }
 .texttwotwo {
   grid-area: p;
   font-size: 20px;
-  margin: auto;
-  text-align: center;
+  text-align: right;
 }
 /* Third image page */
 .thirdimage-title {
@@ -357,8 +372,8 @@ font-weight: 500;
   grid-template-areas: 
   "i i i"
   "i i i"
-  "k . m"
-  "k . o";
+  "m . k"
+  "p . o";
 }
 .imageonethree {
   grid-area: i;
@@ -380,8 +395,11 @@ font-weight: 500;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
-  margin: auto;
-  text-align: center;
+}
+.texttwothree {
+  grid-area: p;
+  font-size: 20px;
+  text-align: right;
 }
 /* Fourth image page */
 .fourthimage-title {
