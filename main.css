@@ -210,39 +210,87 @@ img {
 }
 /* About page */
 .aboutcontainer {
-  padding-top: 5vh;
+  padding-top: 2vh;
   display: grid;
-  grid-template-rows: 25vh 25vh 25vh 25vh;
-  grid-template-columns: 24% 2% 25% 50%;
+  grid-template-rows: 22vh 30vh 10vh 29vh 20vh;
+  grid-template-columns: 40% 29% 2% 29%;
   width: 100%;
   height: 100vh;
   grid-template-areas: 
-  "r r r q"
-  "r r r q"
-  "s s s q"
-  "u t t t";
+  "q r r r"
+  "q v . w"
+  "q s s s"
+  "t y . z"
+  "six u u u";
 }
 .aboutimageone {
   grid-area: q;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
+  object-fit: cover;
+  overflow: hidden;
+  margin-right: 1vw;
+  margin-bottom: 3vh;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.aboutimagetwo {
+  grid-area: v;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 3vh;
+}
+.aboutimagethree {
+  grid-area: w;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 3vh;
+}
+.aboutimagefour {
+  grid-area: y;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 2vh;
+}
+.aboutimagefive {
+  grid-area: z;
+  object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 2vh;
+}
+.aboutimagesix {
+  grid-area: six;
+  object-fit: cover;
+  overflow: hidden;
+  margin-right: 1vw;
 }
 .abouttextone {
   grid-area: r;
   text-align: center;
+  margin: auto;
+  font-size: 17px;
+  word-spacing: 4px;
+  line-height: 25px;
 }
 .abouttexttwo {
   grid-area: s;
   text-align: center;
+  margin: auto;
+  font-size: 17px;
+  word-spacing: 4px;
+  line-height: 25px;
 }
 .abouttextthree {
   grid-area: t;
   text-align: center;
+  margin-right: 1.5vw;
+  font-size: 17px;
+  word-spacing: 4px;
 }
 .abouttextfour {
   grid-area: u;
   text-align: center;
+  font-size: 17px;
+  word-spacing: 4px;
+  line-height: 25px;
 }
 /* First image page */
 .firstimage-title {
@@ -266,7 +314,9 @@ img {
   "i i i"
   "i i i"
   "m . k"
-  "p . o";
+  "m . o"
+  "p . o"
+  ". . .";
 }
 .imageone {
   grid-area: i;
@@ -458,6 +508,7 @@ footer {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     font-size: 10px;
+    position: absolute; 
 }
 footer  {
     margin: 0;
