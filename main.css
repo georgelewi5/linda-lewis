@@ -63,7 +63,8 @@ img {
 }
 /* slider container */
 .slider-container {
-  width: 80%;
+  width: 100%;
+  height: 75vh;
   justify-self: center;
 }
 /* slider */
@@ -72,9 +73,11 @@ img {
 }
 #slider figure {
 	position: relative;
-	width: 500%;
+  width: 500%;
+  height: 78vh;
 	margin: 0;
-	animation: 20s slider infinite;
+  animation: 40s slider infinite;
+  animation-direction: alternate;
 }
 #slider figure img {
 	width: 20%;
@@ -91,24 +94,27 @@ img {
 	25% {
 		left: -100%;
 	}
-	45% {
+	40% {
 		left: -100%;
 	}
-	50% {
+	45% {
 		left: -200%;
 	}
-	70% {
+	60% {
 		left: -200%;
 	}
-	75% {
+	65% {
 		left: -300%;
 	}
-	95% {
+	80% {
 		left: -300%;
 	}
-	100% {
+	85% {
 		left: -400%;
-	}
+  }
+  100% {
+    left: -400%;
+  }
 }
 
 /* Top Bar */
