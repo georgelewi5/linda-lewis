@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta name="Description" content="William Hopkins, Eastboune musician. Bookings for weddings, birthdays, and pubs under £150.">
+        <title>Linda Lewis</title>
+        <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--For static reload-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                var scrollpos = localStorage.getItem('scrollpos');
+                if (scrollpos) window.scrollTo(0, scrollpos);
+            });
+    
+            window.onbeforeunload = function(e) {
+                localStorage.setItem('scrollpos', window.scrollY);
+            };
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--Wrapper starts-->
+            <!-- nav bar -->
+            <section>
+                <div class="top-bar">
+                    <div class="logoa top-text"><img src="../img/LINDALEWISLOGO.jpg" alt="LINDA LEWIS LOGO"></div>
+                    <p class="texta"><a class="top-text b" href="../index.html">HOME</a></p>
+                    <p class="textb"><a class="top-text b" href="../portfolio.html">PORTFOLIO</a></p>
+                    <p class="textc"><a class="top-text b" href="../about.html">ABOUT</a></p>
+                    <p class="textd"><a class="top-text b" href="../contact.html">CONTACT</a></p>
+                </div>
+            </section>
+            <!-- Showcase section -->
+            <section>
+                <div class="fithimage-title">Surrey Winery (Diploma Project)</div>
+                <!-- Horizonal line 1 -->
+            <section>
+                <hr style="border: 1px solid black;"/>
+            </section>
+                <div class="imagefivecontainer">
+                    <div class="imageonefive">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/winery2.jpg">
+                        </a>
+                    </div>
+                    <div class="imagetwofive">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/winery1.jpg">
+                        </a>
+                    </div>
+                    <div class="imagethreefive">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/winery3.jpg">
+                        </a>
+                    </div>
+                    <div class="imagefourfive">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/winery4.jpeg">
+                        </a>
+                    </div>
+                    <div class="textonefive">
+                        <p>An imaginary brief, creating a network of long distance paths linking vineyards in the South East of England, this boutique hotel would be a stop along the way. The masterplan covered themed woodland walks, with an emphasis on wellbeing and relaxation, wine tasting, function rooms and extensive outdoor areas zoned into ‘rooms’ for drinks or outdoor dining. </p>
+                    </div>
+                    <div class="texttwofive">
+                        <p>The design merged the geometry of the house and tendril-like paths and beds. An aromatic courtyard offers visitors the chance to relax by water, surrounding by a planting scheme inspired by the aromas and colors of wine.  In other areas, the areas are informally divided with apple espaliers and vines to enhance the sense of ‘place’.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- first Wrapper ends-->
+         <!--Footer-->
+         <section>
+            <footer class="footer-spacing">
+                <p>George Lewis &copy; 2020</p>
+            </footer>
+        <section>
+    </body>
+ </html>

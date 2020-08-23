@@ -14,9 +14,15 @@ html {
     color: var(--dark);
     scroll-behavior: smooth;
 }
+.showcase  {
+  font-size: 20px;
+}
 p {
   margin-top: 0;
-  margin-block-end: 1.5em;
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 4.5vh;
 }
 body {
     background: var(--background);
@@ -25,7 +31,12 @@ body {
     margin: 0;
 }
 img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.filldiv {
+  object-fit: cover;
+  overflow: hidden;
 }
 .wrapper {
     display: grid;
@@ -33,6 +44,13 @@ img {
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 10vh;
+}
+.portfoliowrapper {
+  display: grid;
+  padding-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 5vh;
 }
 .fade {
   opacity: 1;
@@ -132,7 +150,7 @@ img {
 /* PORTFOLIO PAGE */
 .portfolio-container {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 2vh;
   gap: 20px;
   display: grid;
   overflow: hidden;
@@ -144,13 +162,12 @@ img {
   "e f"
   "g h"
   "m n"
-  "i j"
-  "o p"
-  "k l";
+  "i j";
 }
 .portfolio-text {
   color: var(--text);
   font-size: 20px;
+  padding-bottom: 2vh;
 }
 .first-photo {
   grid-area: a;
@@ -176,14 +193,6 @@ img {
   grid-area: n;
   overflow: hidden;
 }
-.seventh-photo {
-  grid-area: o;
-  overflow: hidden;
-}
-.eighth-photo {
-  grid-area: p;
-  overflow: hidden;
-}
 .first-text {
   grid-area: c;
 }
@@ -202,70 +211,43 @@ img {
 .sixth-text {
   grid-area: j;
 }
-.seventh-text {
-  grid-area: k;
-}
-.eighth-text {
-  grid-area: l;
-}
 /* About page */
 .aboutcontainer {
   padding-top: 2vh;
-  padding-bottom: 20vh;
   display: grid;
   grid-template-rows: 30vh 30vh 15vh 32vh 24vh;
-  grid-template-columns: 40% 29% 2% 29%;
+  grid-template-columns: 40% 2% 28% 2% 28%;
   width: 100%;
-  height: 100vh;
+  height: 121vh;
   grid-template-areas: 
-  "q r r r"
-  "q v . w"
-  "t s s s"
-  "t y . z"
-  "six u u u";
+  "q . r r r"
+  "q . v . w"
+  "t . s s s"
+  "t . y . z"
+  "six . u u u";
 }
 .aboutimageone {
   grid-area: q;
-  object-fit: cover;
-  overflow: hidden;
-  margin-right: 1vw;
-  margin-bottom: 3vh;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 .aboutimagetwo {
   grid-area: v;
-  object-fit: cover;
-  overflow: hidden;
-  margin-bottom: 2.2vh;
 }
 .aboutimagethree {
   grid-area: w;
-  object-fit: cover;
-  overflow: hidden;
-  margin-bottom: 2.2vh;
 }
 .aboutimagefour {
   grid-area: y;
-  object-fit: cover;
-  overflow: hidden;
-  margin-bottom: 2vh;
 }
 .aboutimagefive {
   grid-area: z;
-  object-fit: cover;
-  overflow: hidden;
-  margin-bottom: 2vh;
 }
 .aboutimagesix {
   grid-area: six;
-  object-fit: cover;
-  overflow: hidden;
-  margin-right: 1vw;
 }
 .abouttextone {
   grid-area: r;
-  text-align: center;
   margin: auto;
   font-size: 20px;
   word-spacing: 4px;
@@ -273,7 +255,6 @@ img {
 }
 .abouttexttwo {
   grid-area: s;
-  text-align: center;
   margin: auto;
   font-size: 20px;
   word-spacing: 4px;
@@ -281,18 +262,20 @@ img {
 }
 .abouttextthree {
   grid-area: t;
-  text-align: center;
-  margin-right: 1.5vw;
   font-size: 20px;
-  word-spacing: 4px;
   margin: auto;
 }
 .abouttextfour {
   grid-area: u;
-  text-align: center;
   font-size: 20px;
   word-spacing: 4px;
   line-height: 30px;
+  margin: auto;
+}
+/* Contact page */
+.emailbutton {
+  text-decoration: none;
+  color: black;
 }
 /* First image page */
 .firstimage-title {
@@ -307,7 +290,6 @@ img {
   text-align: center;
 }
 .imageonecontainer {
-  padding-top: 5vh;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
@@ -340,14 +322,11 @@ font-weight: 500;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
-  margin: auto;
-  text-align: center;
 }
 .texttwo {
   grid-area: p;
   font-size: 20px;
-  margin: auto;
-  text-align: center;
+  text-align: right;
 }
 /* Second image page */
 .secondimage-title {
@@ -362,12 +341,10 @@ font-weight: 500;
   text-align: center;
 }
 .imagetwocontainer {
-  padding-top: 5vh;
   justify-items: center;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 80%;
+  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -415,17 +392,17 @@ font-weight: 500;
   text-align: center;
 }
 .imagethreecontainer {
-  padding-top: 5vh;
   justify-items: center;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 80%;
+  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
   "m . k"
-  "p . o";
+  "m . o"
+  "p . o"
+  ". . .";
 }
 .imageonethree {
   grid-area: i;
@@ -466,25 +443,24 @@ font-weight: 500;
   text-align: center;
 }
 .imagefourcontainer {
-  padding-top: 5vh;
   justify-items: center;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 80%;
+  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
+  "p p p"
   "k k k"
+  "m . o"
   "m . o";
 }
 .imageonefour {
   grid-area: i;
-  padding-bottom: 1.5vh;
+  padding-bottom: 4vh;
 }
 .imagetwofour {
   grid-area: m;
-  padding-bottom: 2.5vh;
 }
 .imagethreefour {
   grid-area: o;
@@ -497,9 +473,125 @@ font-weight: 500;
 .textonefour {
   grid-area: k;
   font-size: 20px;
-  padding-bottom: 1.5vh;
-  margin: auto;
+  padding-bottom: 4vh;
   text-align: center;
+}
+.texttwofour {
+  grid-area: p;
+  font-size: 20px;
+  padding-bottom: 4vh;
+  text-align: center;
+}
+/* Fith image page */
+.fithimage-title {
+  padding-top: 3vh;
+  position: relative;
+  font-size: 3.5rem;
+  max-height: 4em;
+  font-weight: 600;
+  color: var(--text);
+  grid-row-start: 1;
+  grid-column: 2;
+  text-align: center;
+}
+.imagefivecontainer {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 48.5% 3% 48.5%;
+  width: 100%;
+  grid-template-areas: 
+  "i i i"
+  "i i i"
+  "m . k"
+  "m . o"
+  "p . o"
+  "r r r";
+}
+.imageonefive {
+  grid-area: i;
+  padding-bottom: 1.5vh;
+
+}
+.imagetwofive {
+  grid-area: m;
+  padding-bottom: 2.5vh;
+}
+.imagethreefive {
+  grid-area: o;
+}
+.imagefourfive {
+  grid-area: r;
+  padding-top: 4vh;
+}
+.titleonefive {
+grid-area: l;
+font-size: 40px;
+font-weight: 500;
+}
+.textonefive {
+  grid-area: k;
+  font-size: 20px;
+  padding-bottom: 1.5vh;
+}
+.texttwofive {
+  grid-area: p;
+  font-size: 20px;
+  text-align: right;
+}
+/* Sixth image page */
+.sixthimage-title {
+  padding-top: 3vh;
+  position: relative;
+  font-size: 3.5rem;
+  max-height: 4em;
+  font-weight: 600;
+  color: var(--text);
+  grid-row-start: 1;
+  grid-column: 2;
+  text-align: center;
+}
+.imagesixcontainer {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 48.5% 3% 48.5%;
+  width: 100%;
+  grid-template-areas: 
+  "i i i"
+  "i i i"
+  "m . k"
+  "m . o"
+  "p . o"
+  "q q q";
+}
+.imageonesix {
+  grid-area: i;
+  padding-bottom: 1.5vh;
+}
+.imagetwosix {
+  grid-area: m;
+  padding-bottom: 2.5vh;
+}
+.imagethreesix {
+  grid-area: o;
+}
+.imagefoursix {
+  grid-area: q;
+  padding-top: 4vh;
+}
+.titleonesix {
+grid-area: l;
+font-size: 40px;
+font-weight: 500;
+}
+.textonesix {
+  grid-area: k;
+  font-size: 20px;
+  padding-bottom: 1.5vh;
+}
+.texttwosix {
+  grid-area: p;
+  font-size: 20px;
+  text-align: right;
 }
 /* footer */
 footer {

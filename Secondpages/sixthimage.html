@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta name="Description" content="William Hopkins, Eastboune musician. Bookings for weddings, birthdays, and pubs under £150.">
+        <title>Linda Lewis</title>
+        <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!--For static reload-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                var scrollpos = localStorage.getItem('scrollpos');
+                if (scrollpos) window.scrollTo(0, scrollpos);
+            });
+    
+            window.onbeforeunload = function(e) {
+                localStorage.setItem('scrollpos', window.scrollY);
+            };
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--Wrapper starts-->
+            <!-- nav bar -->
+            <section>
+                <div class="top-bar">
+                    <div class="logoa top-text"><img src="../img/LINDALEWISLOGO.jpg" alt="LINDA LEWIS LOGO"></div>
+                    <p class="texta"><a class="top-text b" href="../index.html">HOME</a></p>
+                    <p class="textb"><a class="top-text b" href="../portfolio.html">PORTFOLIO</a></p>
+                    <p class="textc"><a class="top-text b" href="../about.html">ABOUT</a></p>
+                    <p class="textd"><a class="top-text b" href="../contact.html">CONTACT</a></p>
+                </div>
+            </section>
+            <!-- Showcase section -->
+            <section>
+                <div class="sixthimage-title">Modern House (Diploma Project)</div>
+                <!-- Horizonal line 1 -->
+            <section>
+                <hr style="border: 1px solid black;"/>
+            </section>
+                <div class="imagesixcontainer">
+                    <div class="imageonesix">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/modern3.jpg">
+                        </a>
+                    </div>
+                    <div class="imagetwosix">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/modern2.jpg">
+                        </a>
+                    </div>
+                    <div class="imagethreesix">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/modern4.jpg">
+                        </a>
+                    </div>
+                    <div class="imagefoursix">
+                        <a href="firstimage.html" target="_blank">
+                            <img src="../img/modern5.jpg">
+                        </a>
+                    </div>
+                    <div class="textonesix">
+                        <p>A garden designed for leisure and entertaining, integrating front and rear gardens including a client request for a bocce court. Various settings were created to entertain friends, including feature steps overlooking the bocce area.</p>
+                    </div>
+                    <div class="texttwosix">
+                        <p>A water feature was given centre stage to catch the shifting light and reflect surrounding planting and a ‘woven’ series of paths linked different zones in the garden and enhanced the monochromatic aesthetic of the house.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- first Wrapper ends-->
+         <!--Footer-->
+         <section>
+            <footer class="footer-spacing">
+                <p>George Lewis &copy; 2020</p>
+            </footer>
+        <section>
+    </body>
+ </html>
