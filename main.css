@@ -273,9 +273,23 @@ img {
   margin: auto;
 }
 /* Contact page */
-.emailbutton {
+.contact-container {
+  width: 100%;
+  padding-top: 2vh;
+  display: grid;
+  overflow: hidden;
+  justify-content: center;
+  grid-template-areas: 
+  "a"
+  "b";
+}
+.email {
   text-decoration: none;
   color: black;
+  grid-area: a;
+}
+.phone {
+  grid-area: b;
 }
 /* First image page */
 .firstimage-title {
@@ -300,7 +314,7 @@ img {
   "m . k"
   "m . o"
   "p . o"
-  ". . .";
+  "q q q";
 }
 .imageone {
   grid-area: i;
@@ -312,6 +326,10 @@ img {
 }
 .imagethree {
   grid-area: o;
+}
+.imagefour {
+  grid-area: q;
+  margin-top: 2vh;
 }
 .titleone {
 grid-area: l;
@@ -351,7 +369,7 @@ font-weight: 500;
   "m . k"
   "m . o"
   "p . o"
-  ". . .";
+  "q q q";
 }
 .imageonetwo {
   grid-area: i;
@@ -363,6 +381,10 @@ font-weight: 500;
 }
 .imagethreetwo {
   grid-area: o;
+}
+.imagefourtwo {
+  grid-area: q;
+  margin-top: 2vh;
 }
 .titleonetwo {
 grid-area: l;
@@ -445,25 +467,32 @@ font-weight: 500;
 .imagefourcontainer {
   justify-items: center;
   display: grid;
-  grid-template-columns: 48.5% 3% 48.5%;
+  grid-template-columns: 65% 35%;
   width: 100%;
+  gap: 1%;
+  height: 200vh;
   grid-template-areas: 
-  "i i i"
-  "i i i"
-  "p p p"
-  "k k k"
-  "m . o"
-  "m . o";
+  "i i"
+  "i i"
+  "p p"
+  "k k"
+  "m o"
+  "m o";
 }
 .imageonefour {
   grid-area: i;
-  padding-bottom: 4vh;
+  width: 100%;
+  padding-bottom: 1vh;
 }
 .imagetwofour {
   grid-area: m;
+  width: 100%;
+  height: 100%;
 }
 .imagethreefour {
   grid-area: o;
+  width: 100%;
+  height: 100%;
 }
 .titleonefour {
 grid-area: l;
@@ -473,13 +502,13 @@ font-weight: 500;
 .textonefour {
   grid-area: k;
   font-size: 20px;
-  padding-bottom: 4vh;
+  padding-bottom: 1vh;
   text-align: center;
 }
 .texttwofour {
   grid-area: p;
   font-size: 20px;
-  padding-bottom: 4vh;
+  padding-bottom: 1vh;
   text-align: center;
 }
 /* Fith image page */
@@ -510,7 +539,6 @@ font-weight: 500;
 .imageonefive {
   grid-area: i;
   padding-bottom: 1.5vh;
-
 }
 .imagetwofive {
   grid-area: m;
