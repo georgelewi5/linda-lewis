@@ -167,7 +167,9 @@ img {
   "e f"
   "g h"
   "m n"
-  "i j";
+  "i j"
+  "q q"
+  "p p";
 }
 .portfolio-text {
   color: var(--text);
@@ -198,6 +200,10 @@ img {
   grid-area: n;
   overflow: hidden;
 }
+.seventh-photo {
+  grid-area: q;
+  overflow: hidden;
+}
 .first-text {
   grid-area: c;
 }
@@ -215,6 +221,9 @@ img {
 }
 .sixth-text {
   grid-area: j;
+}
+.seventh-text {
+  grid-area: p;
 }
 /* About page */
 .aboutcontainer {
@@ -622,6 +631,61 @@ font-weight: 500;
   padding-bottom: 1.5vh;
 }
 .texttwosix {
+  grid-area: p;
+  font-size: 20px;
+  text-align: right;
+}
+/* Seventh image page */
+.seventhimage-title {
+  padding-top: 3vh;
+  position: relative;
+  font-size: 3.5rem;
+  max-height: 4em;
+  font-weight: 600;
+  color: var(--text);
+  grid-row-start: 1;
+  grid-column: 2;
+  text-align: center;
+}
+.imagesevencontainer {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 48.5% 3% 48.5%;
+  width: 100%;
+  grid-template-areas: 
+  "i i i"
+  "i i i"
+  "m . k"
+  "m . o"
+  "p . o"
+  "q q q";
+}
+.imageoneseven {
+  grid-area: i;
+  padding-bottom: 1.5vh;
+}
+.imagetwoseven {
+  grid-area: m;
+  padding-bottom: 2.5vh;
+}
+.imagethreeseven {
+  grid-area: o;
+}
+.imagefourseven {
+  grid-area: q;
+  padding-top: 4vh;
+}
+.titleoneseven {
+grid-area: l;
+font-size: 40px;
+font-weight: 500;
+}
+.textoneseven {
+  grid-area: k;
+  font-size: 20px;
+  padding-bottom: 1.5vh;
+}
+.texttwoseven {
   grid-area: p;
   font-size: 20px;
   text-align: right;
