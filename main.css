@@ -323,9 +323,10 @@ img {
 /* information page */
 .infocontainerone {
   width: 100%;
+  height: 300vh;
   padding-top: 2vh;
   display: grid;
-  gap: 3vw;
+  gap: 1%;
   overflow: hidden;
   grid-template-areas: 
   "a b"
@@ -354,8 +355,10 @@ img {
 .infoimagefour {
   grid-area: f;
 }
-.stages {
+.infotext{
   grid-area: g;
+  font-size: 20px;
+  text-align: center;
 }
 /* First image page */
 .firstimage-title {
