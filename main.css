@@ -331,8 +331,7 @@ img {
   grid-template-areas: 
   "a b"
   "g g"
-  "c c"
-  "d d"
+  "c d"
   "e e";
 }
 .email {
@@ -358,7 +357,6 @@ img {
 .infotext{
   grid-area: g;
   font-size: 20px;
-  text-align: center;
 }
 /* First image page */
 .firstimage-title {
