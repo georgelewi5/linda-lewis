@@ -120,7 +120,7 @@ img {
 .top-bar {
   transform: translateY(15%);
   display: grid;
-  grid-template-columns: 10fr 36fr 7fr 9fr 8fr 10fr;
+  grid-template-columns: 10fr 44fr 7fr 9fr 10fr;
 }
 .top-text {
     font-size: 1.1rem;
@@ -319,44 +319,6 @@ img {
   font-size: 20px;
   word-spacing: 4px;
   line-height: 30px;
-}
-/* information page */
-.infocontainerone {
-  width: 100%;
-  height: 150vh;
-  padding-top: 2vh;
-  display: grid;
-  gap: 1%;
-  overflow: hidden;
-  grid-template-areas: 
-  "a b"
-  "g g"
-  "c d"
-  "e e";
-}
-.email {
-  text-decoration: none;
-  color: black;
-  grid-area: a;
-}
-.phone {
-  grid-area: b;
-}
-.infoimageone {
-  grid-area: c;
-}
-.infoimagetwo {
-  grid-area: d;
-}
-.infoimagethree {
-  grid-area: e;
-}
-.infoimagefour {
-  grid-area: f;
-}
-.infotext{
-  grid-area: g;
-  font-size: 20px;
 }
 /* First image page */
 .firstimage-title {
