@@ -251,13 +251,9 @@ img {
   height: 100%;
   grid-template-areas: 
   "r"
-  "hh"
   "s"
-  "ll"
   "u"
-  "kk"
   "v"
-  "jj"
   "a"
 }
 .aboutcontainerfour {
@@ -270,21 +266,9 @@ img {
 }
 .aboutimageone {
   grid-area: q;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-}
-.lineone {
-  grid-area: hh;
-}
-.linetwo {
-  grid-area: ll;
-}
-.linethree {
-  grid-area: kk;
-}
-.linefour {
-  grid-area: jj;
-}
 .aboutimagetwo {
   grid-area: a;
 }
@@ -342,10 +326,13 @@ img {
   padding-top: 2vh;
   display: grid;
   gap: 3vw;
-  justify-content: center;
   overflow: hidden;
   grid-template-areas: 
-  "a b";
+  "a b"
+  "g g"
+  "c c"
+  "d d"
+  "e e";
 }
 .email {
   text-decoration: none;
@@ -354,6 +341,21 @@ img {
 }
 .phone {
   grid-area: b;
+}
+.infoimageone {
+  grid-area: c;
+}
+.infoimagetwo {
+  grid-area: d;
+}
+.infoimagethree {
+  grid-area: e;
+}
+.infoimagefour {
+  grid-area: f;
+}
+.stages {
+  grid-area: g;
 }
 /* First image page */
 .firstimage-title {
