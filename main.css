@@ -323,7 +323,7 @@ img {
 /* information page */
 .infocontainerone {
   width: 100%;
-  height: 300vh;
+  height: 150vh;
   padding-top: 2vh;
   display: grid;
   gap: 1%;
