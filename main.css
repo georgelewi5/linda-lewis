@@ -159,9 +159,10 @@ img {
 .portfolio-container {
   width: 100%;
   padding-top: 2vh;
-  gap: 20px;
+  gap: 2%;
   display: grid;
   overflow: hidden;
+  height: 100%;
   grid-template-columns: 49% 49%;
   justify-content: center;
   grid-template-areas: 
@@ -206,6 +207,7 @@ img {
 .seventh-photo {
   grid-area: q;
   overflow: hidden;
+  min-height: 162px;
 }
 .first-text {
   grid-area: c;
@@ -812,6 +814,30 @@ footer {
   .portfoliowrapper {
     padding-top: 0px;
   }
+  .portfolio-container {
+    width: 100%;
+    padding-top: 2vh;
+    gap: 0.5%;
+    display: grid;
+    height: 400vh;
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-template-areas: 
+    "e"
+    "g"
+    "b"
+    "d"
+    "f"
+    "h"
+    "a"
+    "c"
+    "m"
+    "i"
+    "n"
+    "j"
+    "q"
+    "p";
+  }
 }
 @media (max-width: 550px) {
   footer {
@@ -832,5 +858,29 @@ footer {
   }
   .footeremail {
     margin-bottom: 4vh;
+  }
+  .portfolio-container {
+    width: 100%;
+    padding-top: 2vh;
+    gap: 0.5%;
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 100%;
+    justify-content: center;
+    grid-template-areas: 
+    "e"
+    "g"
+    "b"
+    "d"
+    "f"
+    "h"
+    "a"
+    "c"
+    "m"
+    "i"
+    "n"
+    "j"
+    "q"
+    "p";
   }
 }
