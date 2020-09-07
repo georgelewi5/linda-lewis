@@ -899,3 +899,12 @@ footer {
     " . a . d . ";
   }
 }
+@media (max-height: 600px) {
+  .slider-container {
+    height: 40vh;
+    padding-top: 30px;
+  }
+  #slider figure {
+    height: 40vh;
+  }
+}
