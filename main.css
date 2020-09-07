@@ -771,19 +771,19 @@ footer {
     margin-bottom: 1vh;
   }
   .top-bar {
-    height: 30vh;
+    height: 20vh;
     text-align: center;
     display: grid;
     place-items: center;
-    grid-template-columns: none;
-    grid-template-rows: 100px 20px 8px 20px 8px 20px;
+    grid-template-columns: 20vw 29vw 2vw 29vw 20vw;
+    grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
-    "a"
-    "b"
-    "."
-    "c"
-    "."
-    "d";
+    " . a . . ."
+    " . a . b . "
+    " . a . . . "
+    " . a . c . "
+    " . a . . . "
+    " . a . d . ";
   }
   .top-text {
       font-size: 1.1rem;
@@ -792,7 +792,7 @@ footer {
       position: absolute;
       grid-area: a;
       min-width: 110px;
-      max-width: 150px;
+      width: 180px;
       transform: translateY(0px);
       transform: translateX(-18px);
       justify-self: center;
@@ -839,7 +839,7 @@ footer {
     "p";
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   footer {
     text-align: center;
     font-size: 12px;
@@ -882,5 +882,20 @@ footer {
     "j"
     "q"
     "p";
+  }
+  .top-bar {
+    height: 20vh;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 10vw 39vw 2vw 39vw 10vw;
+    grid-template-rows: 30px 20px 8px 20px 8px 20px;
+    grid-template-areas: 
+    " . a . . ."
+    " . a . b . "
+    " . a . . . "
+    " . a . c . "
+    " . a . . . "
+    " . a . d . ";
   }
 }
