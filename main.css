@@ -719,25 +719,20 @@ footer {
     font-size: 16px;
     position: absolute;
     margin: 0;
+    grid-template-columns: 10vw 6vw 10vw 16vw 37vw 16vw 10vw ;
+    grid-template-areas: 
+    ". d a c . b .";
 }
 .footerphone {
   grid-area: a;
-  position: relative;
-  justify-self: center;
 }
 .footeremail {
   grid-area: c;
-  position: relative;
-  justify-self: center;
 }
 .footerdesign {
   grid-area: b;
-  font-size: 14px;
-  position: relative;
-  justify-self: center;
+  font-size: 10px;
 }
 .footercontact {
   grid-area: d;
-  position: relative;
-  justify-self: center;
 }
