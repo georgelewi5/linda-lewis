@@ -67,8 +67,7 @@ img {
 /* slider container */
 .slider-container {
   width: 100%;
-  height: 75vh;
-  justify-self: center;
+  height: 80vh;
 }
 /* slider */
 #slider {
@@ -77,7 +76,7 @@ img {
 #slider figure {
 	position: relative;
   width: 500%;
-  height: 78vh;
+  height: 80vh;
 	margin: 0;
   animation: 30s slider infinite;
   animation-direction: alternate;
@@ -719,7 +718,7 @@ footer {
     font-size: 16px;
     position: absolute;
     margin: 0;
-    grid-template-columns: 10vw 6vw 10vw 16vw 37vw 16vw 10vw ;
+    grid-template-columns: 15vw 6vw 10vw 16vw 33vw 16vw 10vw ;
     grid-template-areas: 
     ". d a c . b .";
 }
