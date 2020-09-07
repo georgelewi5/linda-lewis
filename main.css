@@ -769,24 +769,31 @@ footer {
     margin-bottom: 1vh;
   }
   .top-bar {
-    margin: 0 auto;
-    align-self: center;
-    justify-items: center;
+    height: 30vh;
     text-align: center;
     display: grid;
+    place-items: center;
+    grid-template-columns: none;
+    grid-template-rows: 100px 20px 8px 20px 8px 20px;
     grid-template-areas: 
     "a"
     "b"
+    "."
     "c"
-    "d"
-    "e";
+    "."
+    "d";
   }
   .top-text {
       font-size: 1.1rem;
   }
   .logoa {
+      position: absolute;
       grid-area: a;
       min-width: 110px;
+      max-width: 150px;
+      transform: translateY(0px);
+      transform: translateX(-18px);
+      justify-self: center;
   }
   .texta {
       grid-area: b;
@@ -797,13 +804,8 @@ footer {
   .textc {
     grid-area: d;
   }
-  .textd {
-    grid-area: e;
-  }
-  .b {
-      display: block;
-      text-decoration: none;
-      color: rgb(156, 36, 147);
+  .wrapper {
+    padding-top: 0px;
   }
 }
 @media (max-width: 550px) {
