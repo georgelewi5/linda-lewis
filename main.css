@@ -886,7 +886,7 @@ footer {
     text-align: center;
     display: grid;
     place-items: center;
-    grid-template-columns: 10vw 29vw 2vw 29vw 10vw;
+    grid-template-columns: 10vw 29vw 2vw 34vw 5vw;
     grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
     " . a . . ."
