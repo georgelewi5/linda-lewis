@@ -159,10 +159,10 @@ img {
 .portfolio-container {
   width: 100%;
   padding-top: 2vh;
+  padding-bottom: 24%;
   gap: 2%;
   display: grid;
   overflow: hidden;
-  height: 100%;
   grid-template-columns: 49% 49%;
   justify-content: center;
   grid-template-areas: 
@@ -860,6 +860,7 @@ footer {
   .portfolio-container {
     width: 100%;
     padding-top: 2vh;
+    padding-bottom: 0%;
     gap: 0.5%;
     display: grid;
     height: 200vh;
