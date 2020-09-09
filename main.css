@@ -753,10 +753,66 @@ footer {
   footer {
     grid-template-columns: 10vw 12vw 20vw 35vw 1vw 16vw 10vw;
   }
+  .aboutcontainerone {
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    gap: 1%;
+    height: 200vh;
+    grid-template-rows: 35% 55% 10%;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+  }
+  .aboutcontainertwo {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-areas: 
+    "q . t";
+  }
+  .aboutcontainerthree {
+    width: 100%;
+    height: 100%;
+    grid-auto-rows: auto;
+  }
+  .aboutcontainerfour {
+    grid-template-columns: auto;
+  }
 }
 @media (max-width: 800px) {
   footer {
     grid-template-columns: 10vw 12vw 20vw 32vw 1vw 16vw 10vw;
+  }
+  .aboutcontainerone {
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    gap: 1%;
+    height: 200vh;
+    grid-template-rows: 35% 55% 10%;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+  }
+  .aboutcontainertwo {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 49% 2% 49%;
+    grid-template-areas: 
+    "q . t";
+  }
+  .aboutcontainerthree {
+    width: 100%;
+    height: 100%;
+    grid-auto-rows: auto;
+  }
+  .aboutcontainerfour {
+    grid-template-columns: auto;
   }
 }
 @media (max-width: 770px) {
@@ -772,10 +828,9 @@ footer {
   }
   .top-bar {
     height: 20vh;
-    text-align: center;
     display: grid;
-    place-items: center;
-    grid-template-columns: 10vw 29vw 2vw 29vw 10vw;
+    
+    grid-template-columns: 10vw 29vw 7vw 24vw 10vw;
     grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
     " . a . . ."
@@ -884,10 +939,8 @@ footer {
   }
   .top-bar {
     height: 20vh;
-    text-align: center;
     display: grid;
-    place-items: center;
-    grid-template-columns: 10vw 29vw 2vw 34vw 5vw;
+    grid-template-columns: 10vw 29vw 10vw 30vw 5vw;
     grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
     " . a . . ."
@@ -896,6 +949,52 @@ footer {
     " . a . c . "
     " . a . . . "
     " . a . d . ";
+  }
+  .aboutcontainerone {
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    gap: 1%;
+    height: 300vh;
+    grid-template-rows: 35% 55% 10%;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+  }
+  .aboutcontainertwo {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%; 
+    grid-template-areas: 
+    "q"
+    "t";
+  }
+}
+@media (max-width: 400px) {
+  .aboutcontainerone {
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    gap: 1%;
+    height: 400vh;
+    grid-template-rows: 33% 57% 10%;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+  }
+  .aboutcontainertwo {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%; 
+    grid-template-areas: 
+    "q"
+    "t";
   }
 }
 @media (max-height: 600px) {
