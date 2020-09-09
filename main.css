@@ -526,6 +526,7 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
+  "m . o"
   "p . o"
   "r r r";
 }
@@ -569,6 +570,7 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
+  "m . o"
   "p . o"
   "q q q";
 }
@@ -612,6 +614,7 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
+  "m . o"
   "p . o"
   "q q q";
 }
@@ -968,7 +971,7 @@ footer {
     width: 100%;
     gap: 1%;
     height: 400vh;
-    grid-template-rows: 33% 57% 10%;
+    grid-template-rows: 29% 60% 10%;
     grid-template-areas: 
     "a"
     "b"
