@@ -659,31 +659,41 @@ footer {
     font-size: 16px;
     position: absolute;
     margin: 0;
-    grid-template-columns: 15vw 6vw 10vw 16vw 33vw 16vw 10vw;
+    grid-template-columns: 15vw 6vw 10vw 16vw 4vw 25vw 16vw 10vw;
     grid-template-areas: 
-    ". d a c . b .";
+    ". d a c e . b .";
 }
 .footerphone {
   grid-area: a;
+  margin: auto 0;
 }
 .footeremail {
   grid-area: c;
+  margin: auto 0;
 }
 .footerdesign {
   grid-area: b;
   font-size: 10px;
+  margin: auto 0;
 }
 .footercontact {
   grid-area: d;
+  margin: auto 0;
+}
+.instagram {
+  grid-area: e;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
 }
 @media (max-width: 1550px) {
   footer {
-    grid-template-columns: 15vw 10vw 18vw 24vw 10vw 16vw 10vw;
+    grid-template-columns: 15vw 10vw 15vw 19vw 2vw 16vw 20vw 10vw;
   }
 }
 @media (max-width: 1070px) {
   footer {
-    grid-template-columns: 10vw 12vw 20vw 35vw 1vw 16vw 10vw;
+    grid-template-columns: 10vw 10vw 21vw 30vw 2vw 4vw 20vw 10vw;
   }
   .aboutcontainerone {
     padding-top: 2vh;
@@ -716,7 +726,15 @@ footer {
 }
 @media (max-width: 800px) {
   footer {
-    grid-template-columns: 10vw 12vw 20vw 32vw 1vw 16vw 10vw;
+    font-size: 12px;
+    grid-template-columns: 15vw 20vw 34vw 2vw 19vw 10vw;
+    grid-template-areas: 
+    ". d a . b ."
+    ". . c . . ."
+    ". . e . . .";
+  }
+  .footeremail {
+    padding-bottom: 1em;
   }
   .aboutcontainerone {
     padding-top: 2vh;
@@ -751,20 +769,12 @@ footer {
   .title {
     font-size: 2.5rem;
   }
-  footer {
-    font-size: 12px;
-    grid-template-columns: 15vw 20vw 34vw 2vw 19vw 10vw;
-    grid-template-areas: 
-    ". d a . b ."
-    ". . c . . .";
-  }
   .footerphone {
     margin-bottom: 1vh;
   }
   .top-bar {
     height: 20vh;
     display: grid;
-    
     grid-template-columns: 10vw 29vw 7vw 24vw 10vw;
     grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
@@ -836,16 +846,18 @@ footer {
     ". d ."
     ". a ."
     ". c ."
+    ". e ."
     ". b .";
+  }
+  .instagram {
+    margin: auto;
+    margin-bottom: 4vh;
   }
   .footercontact {
     margin-bottom: 1vh;
   }
   .footerphone {
     margin-bottom: 1vh;
-  }
-  .footeremail {
-    margin-bottom: 4vh;
   }
   .portfolio-container {
     width: 100%;
