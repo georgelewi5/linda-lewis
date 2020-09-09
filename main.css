@@ -526,7 +526,6 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
-  "m . o"
   "p . o"
   "r r r";
 }
@@ -570,7 +569,6 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
-  "m . o"
   "p . o"
   "q q q";
 }
@@ -614,7 +612,6 @@ font-weight: 500;
   "i i i"
   "i i i"
   "m . k"
-  "m . o"
   "p . o"
   "q q q";
 }
@@ -906,6 +903,61 @@ footer {
     grid-template-areas: 
     "q"
     "t";
+  }
+  .imagefourcontainer {
+    grid-template-areas: 
+    "o o"
+    "o o"
+    "p p"
+    "k k"
+    "m i"
+    "m i";
+  }
+  .imagefivecontainer {
+    grid-template-areas: 
+    "i i i"
+    "i i i"
+    "k k k"
+    "m m m"
+    "p p p"
+    "o o o"
+    "r r r";
+  }
+  .texttwofive {
+    padding-bottom: 2.5vh;
+    text-align: left;
+  }
+  .imagesixcontainer {
+    grid-template-areas: 
+    "i i i"
+    "i i i"
+    "k k k"
+    "m m m"
+    "p p p"
+    "o o o"
+    "q q q";
+  }
+  .texttwosix {
+    padding-bottom: 2.5vh;
+    text-align: left;
+  }
+  .imagesevencontainer {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 48.5% 3% 48.5%;
+    width: 100%;
+    grid-template-areas: 
+    "i i i"
+    "i i i"
+    "k k k"
+    "m m m"
+    "p p p"
+    "o o o"
+    "q q q";
+  }
+  .texttwoseven {
+    padding-bottom: 2.5vh;
+    text-align: left;
   }
 }
 @media (max-width: 400px) {
