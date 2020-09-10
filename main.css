@@ -66,7 +66,7 @@ html {
   animation: fadeOut 2s 1s;
   animation-fill-mode: forwards;
 }
-@keyrames fadeOut {
+@keyframes fadeOut {
   80% {
     opacity: 80;
   }
