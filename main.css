@@ -912,6 +912,9 @@ footer {
   footer {
     grid-template-columns: 10vw 10vw 21vw 30vw 2vw 4vw 20vw 10vw;
   }
+  .ptext {
+    font-size: 14px;
+  }
   .aboutcontainerone {
     padding-top: 2vh;
     display: grid;
@@ -1029,29 +1032,28 @@ footer {
   .portfoliowrapper {
     padding-top: 0px;
   }
-  .portfolio-container {
+  .ptext {
+    font-size: 13px;
+  }
+  .cardcontainer {
     width: 100%;
     padding-top: 2vh;
+    padding-bottom: 10%;
     gap: 0.5%;
     display: grid;
-    height: 400vh;
     grid-template-columns: 100%;
     justify-content: center;
     grid-template-areas: 
-    "e"
-    "g"
-    "b"
-    "d"
-    "f"
-    "h"
     "a"
+    "b"
     "c"
-    "m"
-    "i"
-    "n"
-    "j"
-    "q"
-    "p";
+    "d"
+    "e"
+    "f"
+    "g";
+  }
+  .cardseven {
+    padding-bottom: 2vh;
   }
 }
 @media (max-width: 560px) {
@@ -1076,30 +1078,28 @@ footer {
   .footerphone {
     margin-bottom: 1vh;
   }
-  .portfolio-container {
+  .ptext {
+    font-size: 13px;
+  }
+  .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 0%;
+    padding-bottom: 10%;
     gap: 0.5%;
     display: grid;
-    height: 200vh;
     grid-template-columns: 100%;
     justify-content: center;
     grid-template-areas: 
-    "e"
-    "g"
-    "b"
-    "d"
-    "f"
-    "h"
     "a"
+    "b"
     "c"
-    "m"
-    "i"
-    "n"
-    "j"
-    "q"
-    "p";
+    "d"
+    "e"
+    "f"
+    "g";
+  }
+  .cardseven {
+    padding-bottom: 2vh;
   }
   .top-bar {
     height: 20vh;
