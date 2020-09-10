@@ -44,8 +44,10 @@ html {
 }
 .loaderimg {
   height: 200px;
+  width: auto;
 }
 .loadercontainer.hidden {
+  animation-delay: 1s;
   animation: fadeOut 1.5s;
   animation-fill-mode: forwards;
 }
