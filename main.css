@@ -114,14 +114,14 @@ img {
 }
 .wrapper {
   display: grid;
-  padding-top: 5vh;
+  padding-top: 2.8vh;
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 10vh;
 }
 .portfoliowrapper {
   display: grid;
-  padding-top: 5vh;
+  padding-top: 2.8vh;
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vh;
@@ -204,20 +204,19 @@ img {
   min-width: 110px;
 }
 .texta {
+  padding-top: 2vh;
   font-weight: lighter;
   grid-column: 3;
 }
 .textb {
+  padding-top: 2vh;
   font-weight: lighter;
   grid-column: 4;
 }
 .textc {
+  padding-top: 2vh;
   font-weight: lighter;
   grid-column: 5;
-}
-.textd {
-  font-weight: lighter;
-  grid-column: 6;
 }
 .b {
     display: block;
@@ -230,94 +229,167 @@ img {
 .active {
     color: rgb(109, 161, 184);
 }
-/* PORTFOLIO PAGE */
-.portfolio-container {
+/* portfolio Page */
+.ptext {
+  word-spacing: 4px;
+  font-weight: lighter;
+  font-size: 20px;
+  color: var(--dark);
+}
+.cardcontainer {
+  display: grid;
   width: 100%;
   padding-top: 2vh;
   padding-bottom: 10%;
-  gap: 1%;
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 49% 49%;
-  justify-content: center;
+  row-gap: 2%;
+  grid-template-columns: 49% 2% 49%;
   grid-template-areas: 
-  "e b"
-  "g d"
-  "f a"
-  "h c"
-  "m n"
-  "i j"
-  "q q"
-  "p p";
+  "c . b"
+  "d . a"
+  "e . f"
+  "g g g";
 }
-.portfolio-text {
-  color: var(--text);
-  font-size: 20px;
-  padding-bottom: 2vh;
-}
-.first-photo {
+.cardone {
+  display: grid;
   grid-area: a;
-  overflow: hidden;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
 }
-.second-photo {
+.picone {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
+}
+.textone {
   grid-area: b;
-  overflow: hidden;
 }
-.third-photo {
-  grid-area: e;
-  overflow: hidden;
+.cardtwo {
+  display: grid;
+  grid-area: b;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
 }
-.fourth-photo {
-  grid-area: f;
-  overflow: hidden;
+.pictwo {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
 }
-.fith-photo {
-  grid-area: m;
-  overflow: hidden;
+.texttwo {
+  grid-area: b;
 }
-.sixth-photo {
-  grid-area: n;
-  overflow: hidden;
-}
-.seventh-photo {
-  grid-area: q;
-  overflow: hidden;
-  min-height: 162px;
-}
-.first-text {
-  color: var(--subtext);
+.cardthree {
+  display: grid;
   grid-area: c;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
 }
-.second-text {
-  color: var(--subtext);
+.picthree {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
+}
+.textthree {
+  grid-area: b;
+}
+.cardfour {
+  display: grid;
   grid-area: d;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
 }
-.third-text {
-  color: var(--subtext);
+.picfour {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
+}
+.textfour {
+  grid-area: b;
+}
+.cardfive {
+  display: grid;
+  grid-area: e;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
+}
+.picfive {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
+}
+.textfive {
+  grid-area: b;
+}
+.cardsix {
+  display: grid;
+  grid-area: f;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
+}
+.picsix {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
+}
+.textsix {
+  grid-area: b;
+}
+.cardseven {
+  display: grid;
   grid-area: g;
+  padding: 2%;
+  background-color: white;
+  grid-template-rows: 95% 2% 3%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
 }
-.fourth-text {
-  color: var(--subtext);
-  grid-area: h;
+.picseven {
+  width: 100%;
+  height: 100%;
+  grid-area: a;
 }
-.fith-text {
-  color: var(--subtext);
-  grid-area: i;
-}
-.sixth-text {
-  color: var(--subtext);
-  grid-area: j;
-}
-.seventh-text {
-  color: var(--subtext);
-  grid-area: p;
+.textseven {
+  grid-area: b;
 }
 /* About page */
 .aboutcontainerone {
+  background-color: white;
+  padding: 2%;
   padding-top: 2vh;
   display: grid;
   grid-template-columns: 25% 2% 73%;
-  width: 100%;
+  width: 96%;
   height: 140vh;
   grid-template-areas: 
   "a . b"
@@ -427,10 +499,12 @@ img {
 }
 /* First image page */
 .imageonecontainer {
+  padding: 2%;
+  width: 96%;
+  background-color: white;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -459,7 +533,7 @@ grid-area: l;
 font-size: 40px;
 font-weight: 500;
 }
-.textone {
+.textonep {
   word-spacing: 4px;
   line-height: 30px;
   font-weight: lighter;
@@ -467,7 +541,7 @@ font-weight: 500;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
-.texttwo {
+.texttwop {
   word-spacing: 4px;
   line-height: 30px;
   font-weight: lighter;
@@ -477,10 +551,12 @@ font-weight: 500;
 }
 /* Second image page */
 .imagetwocontainer {
+  background-color: white;
+  padding: 2%;
+  width: 96%;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -527,10 +603,12 @@ font-weight: 500;
 }
 /* Third image page */
 .imagethreecontainer {
+  background-color: white;
+  padding: 2%;
+  width: 96%;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -573,10 +651,12 @@ font-weight: 500;
 }
 /* Fourth image page */
 .imagefourcontainer {
+  background-color: white;
+  padding: 2%;
+  width: 96%;
   justify-items: center;
   display: grid;
   grid-template-columns: 65% 35%;
-  width: 100%;
   gap: 1%;
   height: 200vh;
   grid-template-areas: 
@@ -627,10 +707,12 @@ font-weight: 500;
 }
 /* Fith image page */
 .imagefivecontainer {
+  background-color: white;
+  padding: 2%;
+  width: 96%;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -677,10 +759,12 @@ font-weight: 500;
 }
 /* Sixth image page */
 .imagesixcontainer {
+  background-color: white;
+  padding: 2%;
+  width: 96%;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
@@ -727,10 +811,12 @@ font-weight: 500;
 }
 /* Seventh image page */
 .imagesevencontainer {
+  background-color: white;
+  padding: 2%;
+  width: 96%;
   justify-items: center;
   display: grid;
   grid-template-columns: 48.5% 3% 48.5%;
-  width: 100%;
   grid-template-areas: 
   "i i i"
   "i i i"
