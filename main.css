@@ -8,11 +8,31 @@
     --background: white;
     --text: black;
     --icons: white;
+    --subtext: black; font-weight: bold;
 }
 html {
     color: var(--dark);
     scroll-behavior: smooth;
 }
+.background {
+  position: fixed;
+  position: -webkit-sticky;
+  position: center;
+  display: block;
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  size: cover;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
+  
+}
+
 .showcase  {
   font-size: 20px;
 }
@@ -51,11 +71,11 @@ img {
   text-align: center;
 }
 .wrapper {
-    display: grid;
-    padding-top: 5vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 10vh;
+  display: grid;
+  padding-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 10vh;
 }
 .portfoliowrapper {
   display: grid;
@@ -134,24 +154,28 @@ img {
   grid-template-columns: 10fr 44fr 117px 151px 168px;
 }
 .top-text {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 .logoa {
-    transform: translateY(-40%);
-    grid-column: 1;
-    min-width: 110px;
+  transform: translateY(-40%);
+  grid-column: 1;
+  min-width: 110px;
 }
 .texta {
-    grid-column: 3;
+  font-weight: lighter;
+  grid-column: 3;
 }
 .textb {
-    grid-column: 4;
+  font-weight: lighter;
+  grid-column: 4;
 }
 .textc {
-    grid-column: 5;
+  font-weight: lighter;
+  grid-column: 5;
 }
 .textd {
-    grid-column: 6;
+  font-weight: lighter;
+  grid-column: 6;
 }
 .b {
     display: block;
@@ -219,24 +243,31 @@ img {
   min-height: 162px;
 }
 .first-text {
+  color: var(--subtext);
   grid-area: c;
 }
 .second-text {
+  color: var(--subtext);
   grid-area: d;
 }
 .third-text {
+  color: var(--subtext);
   grid-area: g;
 }
 .fourth-text {
+  color: var(--subtext);
   grid-area: h;
 }
 .fith-text {
+  color: var(--subtext);
   grid-area: i;
 }
 .sixth-text {
+  color: var(--subtext);
   grid-area: j;
 }
 .seventh-text {
+  color: var(--subtext);
   grid-area: p;
 }
 /* About page */
@@ -303,18 +334,24 @@ img {
   grid-area: e;
 }
 .abouttextone {
+  font-weight: lighter;
+  color: var(--subtext);
   grid-area: r;
   font-size: 20px;
   word-spacing: 4px;
   line-height: 30px;
 }
 .abouttexttwo {
+  font-weight: lighter;
+  color: var(--subtext);
   grid-area: s;
   font-size: 20px;
   word-spacing: 4px;
   line-height: 30px;
 }
 .abouttextawards {
+  font-weight: lighter;
+  color: var(--subtext);
   grid-area: t;
   font-size: 20px;
   margin: auto;
@@ -323,18 +360,24 @@ img {
   line-height: 30px;
 }
 .abouttextthree {
+  font-weight: lighter;
+  color: var(--subtext);
   grid-area: u;
   font-size: 20px;
   word-spacing: 4px;
   line-height: 30px;
 }
 .abouttextfour {
+  font-weight: lighter;
+  color: var(--subtext);
   grid-area: v;
   font-size: 20px;
   word-spacing: 4px;
   line-height: 30px;
 }
 .abouttextfive {
+  font-weight: lighter;
+  color: var(--subtext);
   grid-area: a;
   font-size: 20px;
   word-spacing: 4px;
@@ -375,11 +418,17 @@ font-size: 40px;
 font-weight: 500;
 }
 .textone {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
 .texttwo {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   text-align: right;
@@ -419,11 +468,17 @@ font-size: 40px;
 font-weight: 500;
 }
 .textonetwo {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
 .texttwotwo {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   text-align: right;
@@ -459,11 +514,17 @@ font-size: 40px;
 font-weight: 500;
 }
 .textonethree {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
 .texttwothree {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   text-align: right;
@@ -505,12 +566,18 @@ font-size: 40px;
 font-weight: 500;
 }
 .textonefour {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1vh;
   text-align: center;
 }
 .texttwofour {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   padding-bottom: 1vh;
@@ -551,11 +618,17 @@ font-size: 40px;
 font-weight: 500;
 }
 .textonefive {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
 .texttwofive {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   text-align: right;
@@ -595,11 +668,17 @@ font-size: 40px;
 font-weight: 500;
 }
 .textonesix {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
 .texttwosix {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   text-align: right;
@@ -639,11 +718,17 @@ font-size: 40px;
 font-weight: 500;
 }
 .textoneseven {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: k;
   font-size: 20px;
   padding-bottom: 1.5vh;
 }
 .texttwoseven {
+  word-spacing: 4px;
+  line-height: 30px;
+  font-weight: lighter;
   grid-area: p;
   font-size: 20px;
   text-align: right;
@@ -664,19 +749,23 @@ footer {
     ". d a c e . b .";
 }
 .footerphone {
+  font-weight: lighter;
   grid-area: a;
   margin: auto 0;
 }
 .footeremail {
+  font-weight: lighter;
   grid-area: c;
   margin: auto 0;
 }
 .footerdesign {
+  font-weight: lighter;
   grid-area: b;
   font-size: 10px;
   margin: auto 0;
 }
 .footercontact {
+  font-weight: lighter;
   grid-area: d;
   margin: auto 0;
 }
