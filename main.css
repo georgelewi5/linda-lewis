@@ -17,6 +17,7 @@ html {
 .background {
   position: fixed;
   position: -webkit-sticky;
+  -webkit-backface-visibility: hidden;
   -webkit-filter: blur(8px);
   -moz-filter: blur(8px);
   -o-filter: blur(8px);
