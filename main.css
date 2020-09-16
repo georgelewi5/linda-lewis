@@ -102,8 +102,9 @@ img {
   padding-right: 10vw;
   padding-bottom: 10vh;
   background-image: url(img/winery1.jpg);
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  
 }
 .portfoliowrapper {
   display: grid;
@@ -112,7 +113,6 @@ img {
   padding-right: 10vw;
   padding-bottom: 5vh;
   background-image: url(img/winery1.jpg);
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .fade {
