@@ -18,6 +18,7 @@ html {
   position: fixed;
   position: -webkit-sticky;
   -webkit-backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
   -webkit-filter: blur(8px);
   -moz-filter: blur(8px);
   -o-filter: blur(8px);
