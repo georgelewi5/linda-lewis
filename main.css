@@ -14,20 +14,7 @@ html {
     color: var(--dark);
     scroll-behavior: smooth;
 }
-.background {
-  position: fixed;
-  position: -webkit-sticky;
-  -webkit-backface-visibility: hidden;
-  -webkit-overflow-scrolling: touch;
-  -webkit-filter: blur(8px);
-  -moz-filter: blur(8px);
-  -o-filter: blur(8px);
-  -ms-filter: blur(8px);
-  filter: blur(8px);
-  size: cover;
-  z-index: -1;
-  
-}
+
 .loadercontainer {
   display: grid;
   position: fixed;
@@ -59,7 +46,7 @@ html {
   width: auto;
 }
 .loadercontainer.hidden {
-  animation: fadeOut 2s 1s;
+  animation: fadeOut 0.1s; 
   animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
@@ -114,6 +101,9 @@ img {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 10vh;
+  background-image: url(img/winery1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .portfoliowrapper {
   display: grid;
@@ -121,6 +111,9 @@ img {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vh;
+  background-image: url(img/winery1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .fade {
   opacity: 1;
