@@ -101,7 +101,7 @@ img {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 10vh;
-  background-image: url(img/winery1.jpg);
+  background-image: url(img/background.jpg);
   background-attachment: fixed;
   backdrop-filter: blur(10px);
   
@@ -112,7 +112,7 @@ img {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vh;
-  background-image: url(img/winery1.jpg);
+  background-image: url(img/background.jpg);
   background-attachment: fixed;
 }
 .fade {
