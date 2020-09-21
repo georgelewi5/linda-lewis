@@ -103,7 +103,6 @@ img {
   padding-bottom: 10vh;
   background-image: url(img/background.jpg);
   background-attachment: fixed;
-  backdrop-filter: blur(10px); 
 }
 .portfoliowrapper {
   display: grid;
