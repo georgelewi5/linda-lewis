@@ -1038,7 +1038,7 @@ footer {
   .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 10%;
+    padding-bottom: 10vh;
     gap: 2%;
     display: grid;
     grid-template-columns: 100%;
@@ -1085,7 +1085,7 @@ footer {
   .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 10%;
+    padding-bottom: 70vh;
     gap: 2%;
     display: grid;
     grid-template-columns: 100%;
