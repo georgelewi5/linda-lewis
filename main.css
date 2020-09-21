@@ -46,7 +46,7 @@ html {
   width: auto;
 }
 .loadercontainer.hidden {
-  animation: fadeOut 0.1s; 
+  animation: fadeOut 2s 1s; 
   animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
@@ -210,7 +210,7 @@ img {
 .b {
     display: block;
     text-decoration: none;
-    color: rgb(156, 36, 147);
+    color: rgb(17, 11, 100);
 }
 .b:hover {
     color: grey;
@@ -1038,10 +1038,11 @@ footer {
   .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 10%;
-    gap: 0.5%;
+    padding-bottom: 30vh;
+    gap: 2%;
     display: grid;
     grid-template-columns: 100%;
+    grid-template-rows: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
     justify-content: center;
     grid-template-areas: 
     "a"
@@ -1084,10 +1085,11 @@ footer {
   .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 10%;
-    gap: 0.5%;
+    padding-bottom: 30vh;
+    gap: 2%;
     display: grid;
     grid-template-columns: 100%;
+    grid-template-rows: 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857% 14.2857%;
     justify-content: center;
     grid-template-areas: 
     "a"
