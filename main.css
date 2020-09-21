@@ -103,6 +103,8 @@ img {
   padding-bottom: 10vh;
   background-image: url(img/background.jpg);
   background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  
 }
 .portfoliowrapper {
   display: grid;
@@ -1036,7 +1038,7 @@ footer {
   .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 30vh;
+    padding-bottom: 10%;
     gap: 2%;
     display: grid;
     grid-template-columns: 100%;
@@ -1083,7 +1085,7 @@ footer {
   .cardcontainer {
     width: 100%;
     padding-top: 2vh;
-    padding-bottom: 30vh;
+    padding-bottom: 10%;
     gap: 2%;
     display: grid;
     grid-template-columns: 100%;
@@ -1104,7 +1106,7 @@ footer {
   .top-bar {
     height: 20vh;
     display: grid;
-    grid-template-columns: 10vw 19vw 14vw 30vw 1vw;
+    grid-template-columns: 10vw 29vw 10vw 30vw 5vw;
     grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
     " . a . . ."
