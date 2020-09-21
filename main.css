@@ -104,6 +104,10 @@ img {
   background-image: url(img/background.jpg);
   background-attachment: fixed;
   backdrop-filter: blur(10px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   
 }
 .portfoliowrapper {
@@ -114,6 +118,10 @@ img {
   padding-bottom: 5vh;
   background-image: url(img/background.jpg);
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .fade {
   opacity: 1;
