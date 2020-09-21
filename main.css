@@ -919,7 +919,6 @@ footer {
     padding-top: 2vh;
     display: grid;
     grid-template-columns: 100%;
-    width: 100%;
     gap: 1%;
     height: 200vh;
     grid-template-rows: 35% 55% 10%;
@@ -960,7 +959,6 @@ footer {
     padding-top: 2vh;
     display: grid;
     grid-template-columns: 100%;
-    width: 100%;
     gap: 1%;
     height: 200vh;
     grid-template-rows: 35% 55% 10%;
@@ -1106,7 +1104,7 @@ footer {
   .top-bar {
     height: 20vh;
     display: grid;
-    grid-template-columns: 10vw 29vw 10vw 30vw 5vw;
+    grid-template-columns: 10vw 29vw 14vw 20vw 1vw;
     grid-template-rows: 30px 20px 8px 20px 8px 20px;
     grid-template-areas: 
     " . a . . ."
@@ -1120,7 +1118,6 @@ footer {
     padding-top: 2vh;
     display: grid;
     grid-template-columns: 100%;
-    width: 100%;
     gap: 1%;
     height: 300vh;
     grid-template-rows: 35% 55% 10%;
@@ -1199,10 +1196,9 @@ footer {
     padding-top: 2vh;
     display: grid;
     grid-template-columns: 100%;
-    width: 100%;
     gap: 1%;
     height: 400vh;
-    grid-template-rows: 29% 60% 10%;
+    grid-template-rows: 30% 60% 10%;
     grid-template-areas: 
     "a"
     "b"
