@@ -1187,22 +1187,23 @@ footer {
     padding-bottom: 2.5vh;
     text-align: left;
   }
+  .imagetwocontainer {
+    background-color: white;
+    padding: 2%;
+    width: 96%;
+    justify-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 48.5% 3% 48.5%;
+    grid-template-areas: 
+    "i i i"
+    "i i i"
+    "k k k"
+    "m m m"
+    "p p p"
+    "o o o"
+    "q q q";
 }
-.imagetwocontainer {
-  background-color: white;
-  padding: 2%;
-  width: 96%;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: 48.5% 3% 48.5%;
-  grid-template-areas: 
-  "i i i"
-  "i i i"
-  "k k k"
-  "m m m"
-  "p p p"
-  "o o o"
-  "q q q";
 }
 @media (max-width: 400px) {
   .aboutcontainerone {
