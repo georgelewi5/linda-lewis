@@ -387,14 +387,12 @@ overflow: hidden;
   display: grid;
   grid-template-columns: 25% 2% 73%;
   width: 96%;
-  height: 140vh;
   grid-template-areas: 
   "a . b"
   "c c c";
 }
 .aboutcontainertwo {
   grid-area: a;
-  position: relative;
   display: grid;
   width: 100%;
   height: 100%;
@@ -404,7 +402,6 @@ overflow: hidden;
 }
 .aboutcontainerthree {
   grid-area: b;
-  position: relative;
   display: grid;
   width: 100%;
   height: 100%;
@@ -417,7 +414,6 @@ overflow: hidden;
 }
 .aboutcontainerfour {
   grid-area: c;
-  position: relative;
   display: grid;
   width: 100%;
   height: 100%;
@@ -914,10 +910,10 @@ footer {
   }
   .aboutcontainerone {
     padding-top: 2vh;
+    padding-bottom: 5%;
     display: grid;
     grid-template-columns: 100%;
-    gap: 1%;
-    height: 200vh;
+    row-gap: 1%;
     grid-template-rows: 35% 55% 10%;
     grid-template-areas: 
     "a"
@@ -934,6 +930,8 @@ footer {
   .aboutcontainerthree {
     width: 100%;
     height: 100%;
+    row-gap: 5%;
+    padding-bottom: 40%;
     grid-auto-rows: auto;
   }
   .aboutcontainerfour {
@@ -954,10 +952,10 @@ footer {
   }
   .aboutcontainerone {
     padding-top: 2vh;
+    padding-bottom: 10%;
     display: grid;
     grid-template-columns: 100%;
     gap: 1%;
-    height: 200vh;
     grid-template-rows: 35% 55% 10%;
     grid-template-areas: 
     "a"
@@ -974,6 +972,7 @@ footer {
   .aboutcontainerthree {
     width: 100%;
     height: 100%;
+    padding-bottom: 70%;
     grid-auto-rows: auto;
   }
   .aboutcontainerfour {
@@ -1113,10 +1112,10 @@ footer {
   }
   .aboutcontainerone {
     padding-top: 2vh;
+    padding-bottom: 50%;
     display: grid;
     grid-template-columns: 100%;
     gap: 1%;
-    height: 300vh;
     grid-template-rows: 35% 55% 10%;
     grid-template-areas: 
     "a"
@@ -1132,60 +1131,17 @@ footer {
     "q"
     "t";
   }
-  .imagefourcontainer {
-    grid-template-areas: 
-    "o o"
-    "o o"
-    "p p"
-    "k k"
-    "m i"
-    "m i";
-  }
-  .imagefivecontainer {
-    grid-template-areas: 
-    "i i i"
-    "i i i"
-    "k k k"
-    "m m m"
-    "p p p"
-    "o o o"
-    "r r r";
+  .aboutcontainerthree {
+    padding-bottom: 150%;
   }
   .texttwofive {
     padding-bottom: 2.5vh;
-    text-align: left;
-  }
-  .imagesixcontainer {
-    grid-template-areas: 
-    "i i i"
-    "i i i"
-    "k k k"
-    "m m m"
-    "p p p"
-    "o o o"
-    "q q q";
   }
   .texttwosix {
     padding-bottom: 2.5vh;
-    text-align: left;
-  }
-  .imagesevencontainer {
-    justify-items: center;
-    display: grid;
-    grid-template-columns: 48.5% 3% 48.5%;
-    width: 100%;
-    grid-template-areas: 
-    "i i i"
-    "i i i"
-    "k k k"
-    "m m m"
-    "p p p"
-    "o o o"
-    "q q q";
   }
   .texttwoseven {
     padding-bottom: 2.5vh;
-    text-align: left;
   }
   .imageonecontainer {
     background-color: white;
@@ -1285,7 +1241,6 @@ footer {
     display: grid;
     grid-template-columns: 100%;
     gap: 1%;
-    height: 400vh;
     grid-template-rows: 30% 60% 10%;
     grid-template-areas: 
     "a"
@@ -1300,6 +1255,9 @@ footer {
     grid-template-areas: 
     "q"
     "t";
+  }
+  .aboutcontainerthree {
+    padding-bottom: 200%;
   }
 }
 @media (max-height: 600px) {
