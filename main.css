@@ -98,7 +98,8 @@ img {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 10vh;
-  background-image: url(img/background.jpg);
+  background-color: white;
+  /* background-image: url(img/background.jpg); */
   background-attachment: fixed;
   
 }
@@ -107,7 +108,8 @@ img {
   padding-left: 10vw;
   padding-right: 10vw;
   padding-bottom: 5vh;
-  background-image: url(img/background.jpg);
+  background-color: white;
+  /* background-image: url(img/background.jpg); */
   background-attachment: fixed;
 }
 .fade {
