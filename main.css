@@ -8,6 +8,7 @@
     --text: black;
     --icons: white;
     --subtext: black; font-weight: bold;
+    --card: rgb(255, 255, 255);
 }
 html {
     color: var(--dark);
@@ -228,6 +229,18 @@ overflow: hidden;
   font-weight: lighter;
   font-size: 20px;
   color: var(--dark);
+  text-align: center;
+}
+.pcard {
+  display: grid;
+  padding: 2%;
+  height: 100%;
+  background-color: var(--card);
+  grid-template-rows: 90% 4% 6%;
+  grid-template-areas: 
+  "a"
+  "."
+  "b";
 }
 .cardcontainer {
   display: grid;
@@ -246,16 +259,7 @@ overflow: hidden;
   "g g g";
 }
 .cardone {
-  display: grid;
   grid-area: a;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 90% 4% 6%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .picone {
   width: 100%;
@@ -266,16 +270,7 @@ overflow: hidden;
   grid-area: b;
 }
 .cardtwo {
-  display: grid;
   grid-area: b;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 90% 4% 6%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .pictwo {
   width: 100%;
@@ -286,16 +281,7 @@ overflow: hidden;
   grid-area: b;
 }
 .cardthree {
-  display: grid;
   grid-area: c;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 90% 4% 6%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .picthree {
   width: 100%;
@@ -306,16 +292,7 @@ overflow: hidden;
   grid-area: b;
 }
 .cardfour {
-  display: grid;
   grid-area: d;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 90% 4% 6%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .picfour {
   width: 100%;
@@ -326,16 +303,7 @@ overflow: hidden;
   grid-area: b;
 }
 .cardfive {
-  display: grid;
   grid-area: e;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 90% 4% 6%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .picfive {
   width: 100%;
@@ -346,16 +314,7 @@ overflow: hidden;
   grid-area: b;
 }
 .cardsix {
-  display: grid;
   grid-area: f;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 90% 4% 6%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .picsix {
   width: 100%;
@@ -366,16 +325,7 @@ overflow: hidden;
   grid-area: b;
 }
 .cardseven {
-  display: grid;
   grid-area: g;
-  padding: 2%;
-  height: 100%;
-  background-color: white;
-  grid-template-rows: 95% 2% 3%;
-  grid-template-areas: 
-  "a"
-  "."
-  "b";
 }
 .picseven {
   width: 100%;
