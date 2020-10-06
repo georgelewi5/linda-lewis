@@ -233,7 +233,7 @@ overflow: hidden;
 }
 .pcard {
   display: grid;
-  padding: 2%;
+  /* padding: 2%; */
   height: 100%;
   background-color: var(--card);
   grid-template-rows: 90% 4% 6%;
