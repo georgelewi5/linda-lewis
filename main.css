@@ -100,7 +100,7 @@ img {
   padding-right: 10vw;
   padding-bottom: 10vh;
   background-color: white;
-  /* background-image: url(img/background.jpg); */
+  background-image: url(img/background.jpg); 
   background-attachment: fixed;
   
 }
@@ -110,7 +110,7 @@ img {
   padding-right: 10vw;
   padding-bottom: 5vh;
   background-color: white;
-  /* background-image: url(img/background.jpg); */
+  background-image: url(img/background.jpg);
   background-attachment: fixed;
 }
 .fade {
@@ -233,7 +233,7 @@ overflow: hidden;
 }
 .pcard {
   display: grid;
-  /* padding: 2%; */
+  padding: 2%;
   height: 100%;
   padding-bottom: 1vh;
   background-color: var(--card);
