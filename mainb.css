@@ -100,7 +100,7 @@ img {
   padding-right: 10vw;
   padding-bottom: 10vh;
   background-color: white;
-  background-image: url(img/background.jpg); 
+  /* background-image: url(img/background.jpg);  */
   background-attachment: fixed;
   
 }
@@ -124,8 +124,7 @@ img {
 }
 /* slider container */
 .slider-container {
-  padding-top: 3vh;
-  width: 100%;
+  width: 100vw;
   height: 80vh;
 }
 /* slider */
@@ -134,7 +133,7 @@ overflow: hidden;
 }
 #slider figure {
 	position: relative;
-  width: 500%;
+  width: 500vw;
   height: 80vh;
 	margin: 0;
   animation: 30s slider infinite;
@@ -179,54 +178,48 @@ overflow: hidden;
 }
 /* Top Bar */
 .top-bar {
-  transform: translateY(15%);
   display: grid;
-  translate: -20px -0px;
-  grid-template-columns: 24fr 30fr 117px 151px 168px;
-  height: 10vh;
-  padding-bottom: 3vh;
-}
-.textaa {
-  margin: auto;
-  font-weight: lighter;
-  grid-column: 2;
+  grid-template-rows: 2.5vh 10vh 2.5vh;
+  grid-template-columns: 10vw 20vw 30vw 10vw 10vw 10vw 10vw;
+  grid-template-areas:
+  ". . . . . . ."
+  ". a . b c d ."
+  ". . . . . . .";
+  background-color: rgb(135, 150, 156);
 }
 .top-text {
-  font-size: 1.1rem;
-}
-.logoa {
-  width: 100%;
-  grid-column: 1;
+  font-size: 1.2vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .logob {
   width: 80%;
-
-  grid-column: 1;
+  grid-area: a;
 }
+
 .texta {
   margin: auto;
   font-weight: lighter;
-  grid-column: 3;
+  grid-area: b;
 }
 .textb {
   margin: auto;
   font-weight: lighter;
-  grid-column: 4;
+  grid-area: c;
 }
 .textc {
   font-weight: lighter;
-  grid-column: 5;
+  grid-area: d;
   margin: auto;
 }
 .b {
   text-decoration: none;
-  color: rgb(17, 11, 100);
+  color: rgb(255, 255, 255);
 }
 .b:hover {
     color: grey;
 }
 .active {
-    color: rgb(109, 161, 184);
+    color: rgb(0, 0, 0);
 }
 /* portfolio Page */
 .ptext {
